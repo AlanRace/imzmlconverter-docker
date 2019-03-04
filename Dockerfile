@@ -13,8 +13,9 @@ RUN unzip jimzMLConverter-2.0.5.zip
 RUN mv jimzMLConverter/target/* ./
 RUN rm -r jimzMLConverter
 
-RUN echo "#!/bin/bash\njava -jar jimzMLConverter-2.0.5.jar $@" > jimzMLConverter
+RUN echo "#!/bin/bash\njava -jar jimzMLConverter-2.0.5.jar \"\$@\"" > jimzMLConverter
 RUN chmod 775 jimzMLConverter
 
 ENV PATH="/data:${PATH}"
+
 
