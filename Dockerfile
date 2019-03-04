@@ -11,4 +11,4 @@ RUN java -version
 RUN wget https://github.com/AlanRace/imzMLConverter/releases/download/2.0.5/jimzMLConverter-2.0.5.zip
 RUN unzip jimzMLConverter-2.0.5.zip
 RUN mv jimzMLConverter/target/* ./
-RUN ls
+
